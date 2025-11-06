@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teja Restaurant - Authentic Indian Cuisine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils me-2"></i>
+                Teja Restaurant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specials">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2" href="#reservation">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4">Welcome to Teja Restaurant</h1>
+                    <p class="lead mb-4">Experience the finest authentic Indian cuisine in a warm and inviting atmosphere. Our chefs use traditional recipes with a modern twist.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                        <a href="#reservation" class="btn btn-outline-light btn-lg">Book Table</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <img src="https://png.pngtree.com/background/20230528/original/pngtree-an-arrangement-of-various-indian-food-picture-image_2778221.jpg" alt="Indian Food" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Our Story</h2>
+                    <p class="lead">Established in 2025, Teja Restaurant has been serving authentic Indian flavors with a commitment to quality and tradition.</p>
+                    <p>Our chefs combine generations-old recipes with fresh, locally-sourced ingredients to create dishes that delight the senses and nourish the soul.</p>
+                    <div class="about-features mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-primary me-3"></i>
+                                    <span>Fresh Ingredients</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-primary me-3"></i>
+                                    <span>Traditional Recipes</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-primary me-3"></i>
+                                    <span>Expert Chefs</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-primary me-3"></i>
+                                    <span>Warm Ambiance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Menu</h2>
+            <div class="row">
+                <!-- Starters -->
+                <div class="col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="category-title">Starters</h3>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Paneer Tikka</h5>
+                                <span class="price">499rs</span>
+                            </div>
+                            <p>Grilled cottage cheese with spices</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Samosa</h5>
+                                <span class="price">169rs</span>
+                            </div>
+                            <p>Crispy pastry with spiced potatoes</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Chicken 65</h5>
+                                <span class="price">499rs</span>
+                            </div>
+                            <p>Spicy deep-fried chicken</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Course -->
+                <div class="col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="category-title">Main Course</h3>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Butter Chicken</h5>
+                                <span class="price">499rs</span>
+                            </div>
+                            <p>Chicken in rich tomato gravy</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Lamb Biryani</h5>
+                                <span class="price">549rs</span>
+                            </div>
+                            <p>Fragrant rice with tender lamb</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Palak Paneer</h5>
+                                <span class="price">349</span>
+                            </div>
+                            <p>Cottage cheese in spinach gravy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="category-title">Desserts</h3>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Gulab Jamun</h5>
+                                <span class="price">189rs</span>
+                            </div>
+                            <p>Sweet milk balls in syrup</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Kheer</h5>
+                                <span class="price">249rs</span>
+                            </div>
+                            <p>Traditional rice pudding</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Rasmalai</h5>
+                                <span class="price">179rs</span>
+                            </div>
+                            <p>Cottage cheese in sweet milk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary btn-lg">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Today's Specials</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="special-card text-center p-4">
+                        <div class="special-icon mb-3">
+                            <i class="fas fa-crown fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="text-white">Chef's Special Thali</h4>
+                        <p class="text-light">A complete meal with 8 different dishes</p>
+                        <div class="price-tag">
+                            <span class="text-warning fw-bold">2499rs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="special-card text-center p-4">
+                        <div class="special-icon mb-3">
+                            <i class="fas fa-fire fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="text-white">Spicy Lamb Curry</h4>
+                        <p class="text-light">Signature lamb dish with extra spices</p>
+                        <div class="price-tag">
+                            <span class="text-warning fw-bold">1899rs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="special-card text-center p-4">
+                        <div class="special-icon mb-3">
+                            <i class="fas fa-leaf fa-3x text-success"></i>
+                        </div>
+                        <h4 class="text-white">Vegetarian Feast</h4>
+                        <p class="text-light">5 vegetarian delicacies with bread</p>
+                        <div class="price-tag">
+                            <span class="text-warning fw-bold">2000rs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 text-center">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"The best Indian food I've had outside of India! The flavors are authentic and the service is exceptional."</p>
+                        <div class="customer-info">
+                            <h5 class="mb-1">Sarah Johnson</h5>
+                            <p class="text-muted">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 text-center">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"Teja Restaurant never disappoints. Their biryani is to die for, and the ambiance is perfect for family dinners."</p>
+                        <div class="customer-info">
+                            <h5 class="mb-1">Michael Chen</h5>
+                            <p class="text-muted">Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 text-center">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"I've been coming here for years. Consistent quality, friendly staff, and the most delicious curries in town."</p>
+                        <div class="customer-info">
+                            <h5 class="mb-1">RISHMITHA</h5>
+                            <p class="text-muted">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title mb-4">Make a Reservation</h2>
+                    <p class="mb-4">Book your table in advance to avoid waiting. We'll confirm your reservation within 30 minutes.</p>
+                    <div class="restaurant-info">
+                        <div class="info-item d-flex mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>VINAYAK NAGAR, GACCHIBOWLI, HYDERABAD 500032</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-3">
+                            <i class="fas fa-phone text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+91 99123 99123</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-3">
+                            <i class="fas fa-clock text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Opening Hours</h5>
+                                <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="reservation-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Time</label>
+                                <input type="time" class="form-control" id="time" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="1">1 Person</option>
+                                    <option value="2" selected>2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6+ People</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="occasion" class="form-label">Occasion (Optional)</label>
+                                <select class="form-select" id="occasion">
+                                    <option value="">Select Occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card text-center p-4">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                        <h4>Address</h4>
+                        <p>VINAYAK NAGAR<br>GACCHIBOWLI,HYDERABAD 500032</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card text-center p-4">
+                        <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                        <h4>Phone</h4>
+                        <p>+91 99123 999123<br>+91 90009 90009</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card text-center p-4">
+                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                        <h4>Email</h4>
+                        <p>info@tejarestaurant.com<br>reservations@tejarestaurant.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">Teja Restaurant</h4>
+                    <p>Serving authentic Indian cuisine with passion and tradition since 2024.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Sunday</li>
+                        <li class="mb-2">11:00 AM - 10:00 PM</li>
+                        <li>Last order at 9:30 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Teja Restaurant. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> for food lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
