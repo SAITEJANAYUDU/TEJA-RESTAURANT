@@ -23,7 +23,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 600;
 }
 
-/* Navigation */
 .navbar {
     background-color: rgba(26, 26, 26, 0.95);
     padding: 15px 0;
@@ -56,7 +55,6 @@ h1, h2, h3, h4, h5 {
     box-shadow: none;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585937421612-70ca5a7d7949?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
     background-size: cover;
@@ -102,7 +100,6 @@ h1, h2, h3, h4, h5 {
     transform: translateY(-3px);
 }
 
-/* Section Styling */
 section {
     padding: 80px 0;
 }
@@ -131,7 +128,6 @@ section {
     background-color: var(--primary);
 }
 
-/* About Section */
 .about-section img {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -141,7 +137,6 @@ section {
     font-size: 1.2rem;
 }
 
-/* Menu Section */
 .menu-section {
     background-color: #f9f9f9;
 }
@@ -172,7 +167,6 @@ section {
     font-size: 1.1rem;
 }
 
-/* Specials Section */
 .specials-section {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
     background-size: cover;
@@ -200,7 +194,6 @@ section {
     transform: translateY(-10px);
 }
 
-/* Testimonials */
 .testimonial-card {
     background: white;
     border-radius: 10px;
@@ -221,7 +214,6 @@ section {
     margin: 0 2px;
 }
 
-/* Reservation Section */
 .reservation-form .form-control,
 .reservation-form .form-select {
     padding: 12px;
@@ -235,7 +227,6 @@ section {
     box-shadow: 0 0 0 0.2rem rgba(197, 45, 47, 0.25);
 }
 
-/* Contact Section */
 .contact-card {
     background: white;
     border-radius: 10px;
@@ -247,7 +238,6 @@ section {
     transform: translateY(-5px);
 }
 
-/* Footer */
 .footer {
     background-color: var(--dark);
 }
@@ -273,7 +263,6 @@ section {
     overflow: hidden;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;

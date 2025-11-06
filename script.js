@@ -1,4 +1,3 @@
-// Navbar background change on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -10,7 +9,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -24,31 +22,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Reservation form handling
 document.querySelector('.reservation-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get form values
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
     const guests = document.getElementById('guests').value;
     
-    // Simple validation
     if (!name || !phone || !date || !time || !guests) {
         alert('Please fill in all required fields');
         return;
     }
     
-    // In a real application, you would send this data to a server
     alert(`Thank you ${name}! Your reservation for ${guests} people on ${date} at ${time} has been received. We will call you at ${phone} to confirm.`);
     
-    // Reset form
     this.reset();
 });
 
-// Newsletter form handling
 document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const email = this.querySelector('input[type="email"]').value;
@@ -59,13 +51,11 @@ document.querySelector('.newsletter-form').addEventListener('submit', function(e
     }
 });
 
-// Set minimum date for reservation to today
 document.addEventListener('DOMContentLoaded', function() {
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('date').min = today;
 });
 
-// Add animation to elements when they come into view
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -80,7 +70,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe elements for animation
 document.querySelectorAll('.menu-item, .special-card, .testimonial-card, .contact-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
